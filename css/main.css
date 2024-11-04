@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url(./reset.css);
+
+/* theme and variable*/
+:root{ /* pseudo class */
+    --button-primary: rgb(162, 155, 254);
+    --button-secondary:rgba(214, 48, 49, .9);
+}
+
+header > h1{
+  font-family: "Rubik Wet Paint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #ea4335; 
+  line-height: 9.5rem;
+  font-size: 7rem;
+  text-shadow: .2rem .2rem rgb(255, 179, 0), 
+  -.2rem -.2rem   rgb(255, 179, 0),
+  .2rem -.2rem   rgb(255, 179, 0), 
+  -.2rem .4rem rgb(255, 179, 0);
+  padding: 3rem 0;
+}
+
+figure, section{
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+figure img{
+    width: 100%; /* 100% de la largeur du parent */ 
+    filter: drop-shadow(0 0 2rem #dc143c);
+}
+/* galerie primary */
+figure.gallery-primary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+figure.gallery-primary figcaption{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 4.5rem;
+    padding: 1.6rem 0;
+}
+.btn-default{ /* default button */
+    display: inline-block;
+    width: max-content;
+    line-height: 2.5rem;
+    padding: .8rem;
+    color: #222;
+    background-color: #ccc;
+    text-decoration: none;
+    border-radius: .4rem;
+    text-transform: capitalize;
+}
+/* theme button */
+.btn-primary{
+    background-color: var(--button-primary);
+}
+.btn-secondary{
+    background-color:var(--button-secondary);
+    color: #fff;
+}
+
+
+
+figure.gallery-primary img{
+    width: auto;
+    height: 15rem;
+    
+}
+
+footer p{
+    text-align: center;
+    
+}
